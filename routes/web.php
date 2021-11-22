@@ -34,8 +34,9 @@ Route::get('/', function () {
 
 
 Route::get('/', 'MyController@index');
+Route::get('/about', 'MyController@about');
+Route::get('/service', 'MyController@services');
 
-Route::get('/validation/check', 'MyController@testpage')->name('validatepage');
 
-Route::resource('post', 'PostController');
+Route::resource('posts', 'PostController');
 
